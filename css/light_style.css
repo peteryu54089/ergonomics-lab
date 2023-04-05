@@ -1,0 +1,106 @@
+.lx-background-item{
+	border-right:1px solid #F8F8F8;
+	transition:all ease 0.3s;
+}
+.lx-background-item:nth-child(2n+1){
+	background:#FEFEFE;
+}
+.lx-theme-style a{
+	color:#242424;
+	transition:all ease 0.3s;
+}
+.lx-header-logo a{
+	color:#242424;
+	transition:all ease 0.3s;
+}
+.lx-header-search form input[type='text']{
+	transition:all ease 0.3s;
+}
+.lx-menu-list ul li a{
+	color:#848484;
+	transition:all ease 0.3s;
+}
+.lx-menu-list ul li a:hover{
+	color:#242424;
+	transition:all ease 0.3s;
+}
+.lx-menu-list ul li a.active{
+	color:#242424;
+	transition:all ease 0.3s;
+}
+.lx-post-title h3 a{
+	color:#242424;
+	transition:all ease 0.3s;
+}
+.lx-post-title span a{
+	color:#BEBEBE;
+	transition:all ease 0.3s;
+}
+.lx-navigation{
+	transition:all ease 0.3s;
+}
+.lx-navigation a{
+	color:#242424;
+	transition:all ease 0.3s;
+}
+.lx-single-post-header span{
+	color:#BEBEBE;
+	transition:all ease 0.3s;
+}
+.lx-single-post-thumbnail p{
+	color:#BEBEBE;
+	transition:all ease 0.3s;
+}
+.lx-single-post-content p a{
+	color:#242424;
+	transition:all ease 0.3s;
+}
+.lx-single-post-footer h3 span{
+	border-bottom:1px solid #242424;
+	transition:all ease 0.3s;
+}
+.lx-single-post-footer p{
+	color:#848484;
+	transition:all ease 0.3s;
+}
+.lx-single-post-share h3 span{
+	border-bottom:1px solid #242424;
+	transition:all ease 0.3s;
+}
+.lx-single-post-comment h3 span{
+	border-bottom:1px solid #242424;
+	transition:all ease 0.3s;
+}
+.lx-single-post-comment-item > ul li a{
+	color:#242424;
+}
+.lx-single-post-share ul li a{
+	color:#242424;
+}
+.lx-main-gallery{
+	background:rgba(255,255,255,0.9);
+	transition:all ease 0.3s;
+}
+.lx-main-gallery-content h3 span{
+	background:rgba(255,255,255,0.5);
+}
+.lx-gallery-layer{
+	background:rgba(255,255,255,0.5);
+	transition:all ease 0.3s;
+}
+.lx-gallery-title{
+	background:linear-gradient(to top,rgba(0,0,0,0.3),rgba(0,0,0,0.0));
+	transition:all ease 0.3s;
+}
+.lx-gallery-title h3{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-footer-sn ul li a{
+	color:#242424;
+	transition:all ease 0.3s;
+}
+.lx-footer-links ul li a{
+	color:#242424;
+	transition:all ease 0.3s;
+}

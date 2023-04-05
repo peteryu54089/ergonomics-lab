@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="utf-8">
+		<title>Ergonomics Lab</title>
+		<meta name="description" content="Ergonomics Lab">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- General CSS Settings -->
+		<link rel="stylesheet" href="css/general_style.css">
+		<!-- Main Style of the template -->
+		<link rel="stylesheet" href="css/main_style.css">
+		<!-- Theme Style of the template -->
+		<link rel="stylesheet" href="css/light_style.css" title="theme_style">
+		<!-- Landing Page Style -->
+		<link rel="stylesheet" href="css/reset_style.css">
+		<!-- Awesomefont -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Fav Icon -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<style>
+            img[src*="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"]{ display: none; }
+        </style>
+	</head>
+	<body>
+
+		<!-- Loader -->
+		<div class="lx-loader">
+			<div>
+				<h1>Ergonomics Lab</h1>
+				<img src="images/oval.svg" alt="Loading" />
+				<p>Powered By Mizzou</p>
+			</div>
+		</div>
+		<!-- Background -->
+		<div class="lx-background">
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+		</div>
+		<!-- Wrapper -->
+		<div class="lx-wrapper">
+			<!-- Theme Style -->
+			<div class="lx-theme-style">
+				<a href="javascript:;">Dark Mode</a>
+			</div>
+			<!-- Header -->
+			<div class="lx-header">
+				<div class="lx-header-content">
+					<div class="lx-header-mobile">
+						<i class="material-icons">menu</i>
+					</div>					
+					<div class="lx-header-logo">
+						<a href="index.html">Ergonomics Lab</a>
+					</div>
+					<div class="lx-menu">
+						<div class="lx-menu-list">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="research-1.html">Mar 2023</a></li>
+								<li><a href="research-2.html">Jan 2023</a></li>
+								<li><a href="research-3.html">Dec 2022</a></li>
+								<li><a href="research-4.html">Oct 2022</a></li>
+								<li><a href="research-5.html" class="active">Jul 2022</a></li>
+								<li><a href="research-6.html">Jan 2022</a></li>
+								<li><a href="research-7.html">Jun 2021</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="lx-search-btn">
+						<i class="material-icons">search</i>
+					</div>
+					<div class="lx-header-search">
+						<form action="#" method="post" autocomplete="off">
+							<label><input type="text" name="keyword" placeholder="SEARCH" /></label>
+							<input type="submit" name="submit" value="search" class="material-icons" />
+							<input type="button" name="close" value="close" class="material-icons" />
+						</form>
+					</div>
+					<div class="lx-clear-fix"></div>
+				</div>
+			</div>
+			<!-- Main -->
+			<div class="lx-main">
+				<div class="lx-single-post">
+					<div class="lx-single-post-header">
+						<h1>Augmented Reality into Undergraduate Engineering Laboratories</h1>
+						<span>July 2022</span>
+					</div>				
+					<div class="lx-single-post-content">
+						<p>We conducted a quasi-experimental intervention design to test the usability and learning performance within our interactive learning solution for engineering education. To begin, we designed two ergonomics lectures based on the instructional materials compiled by a professor who has been teaching in the field of engineering education for over ten years. We built fifteen 3D scenes using Unity to represent the two lectures. The first lecture contains seven scenes, and the second lecture contains eight scenes. To create an immersive learning experience, we placed a large semicircular blackboard in each scene, consisting of five smaller connected panels. This design provides the users with the ease and comfort to view and interact with the virtual space used for the lecture when they stand in the center of the scent and face forward. These five panels are used to display figures, human avatar, formula calculation, problem statements, and table of figures.</p>
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<div class="lx-single-post-thumbnail">
+						<img alt="Alternative Title" src="images/img-5-1.png" />
+					</div>
+					<div class="lx-single-post-content">
+						<p>For complex 3D models and animations, we used Autodesk 3ds Max to create and export them as Filmbox (FBX) files and then import them into Unity game engine. To guide the users’ gaze during the learning process, we created a 3D animated virtual instructor to simulate the real-world scenario of a professor in class. For the virtual instructor's voice, we used Murf AI, a high-quality speech generation software, to generate natural-sounding AI voices based on our input scripts. Xsens motion capture system was used to create the realistic character movement to simulate the professor's body movements in class. Finally, the virtual instructor animation, voice and the panel display of lecture contents are synchronized to provide a coherent and easy to follow virtual lecture.</p>
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<div class="lx-single-post-thumbnail">
+						<img alt="Alternative Title" src="images/img-5-2.png" />
+					</div>
+					<div class="lx-single-post-content">
+						<p>We used Microsoft HoloLens 2 as the projection device for AR environments. Microsoft Mixed Reality Toolkit 3 (MRTK3), a mixed reality development framework was used for input system and building blocks for spatial interactions and UI. In addition, we used the eye gaze data provider of MRTK to collect eye-tracking data from the participants, including timestamps, the names and coordinates of the virtual objects touched by the participants’ gaze, and the linear distances between the coordinates of participants’ eyes and the coordinates of the virtual objects. If the participants’ gaze did not intersect with any virtual objects at a given time, no data was collected for that moment. It is worth noting that each AR scene generates an eye-tracking data file for each run. If the participants watched a scene several times, multiple data files for that scene were generated. In other words, even if the researchers were not present during the experiment, we could still clearly identify which participants watched which scenes repeatedly. To analyze the participants' learning behavior, we divided each data file into the data in class and the data when answering questions after class. By visualizing the data in class on a two-dimensional plane, we could easily determine whether the participants were distracted in the learning process. Besides, analyzing whether the participants’ gaze followed the instructions of the virtual instructor holds unique promise for discovering learning patterns and predicting learning behavior. To validate the eye-tracking data, we also used the video capture function of HoloLens to record the field of view of the participants during the experiment.</p>
+					</div>
+					<br />
+					<br />
+					<br />
+					<div class="lx-single-post-content">
+						<p>For each of the Unity scenes built, we exported them separately as a Visual Studio solution for the Universal Windows Platform. After pairing Visual Studio with HoloLens over Wi-Fi, we deployed these solutions to HoloLens, creating fifteen AR applications. To allow users to easily navigate through these AR applications through their positions, an accurate and fast indoor tracking technology that could be integrated with the AR systems was needed. The Q-Track NFER system met these needs. It consists of four components, the router, locator receiver, real-time positioning sensor, and real-time positioning software. Since the system uses a Transmission Control Protocol (TCP) socket-based protocol, after receiving the location signal sent by the real-time positioning sensor using NFER technology, the locator receiver transmits the information through the router using Wi-Fi to the real-time tracking software running on TCP port 15752 on a laptop. We developed a client program in C# based on the Application Programming Interface (API) of the Q-Track NFER system to determine which AR scene should be triggered by the received location coordinates. Since we divided the experiment site into seven areas for lecture one and eight areas for lecture two, the client program could easily determine which area the current location belongs to based on the pre-defined boundaries, and open Microsoft Windows Device Portal for HoloLens through the browser automation tool Selenium to run the corresponding AR application and project the scene onto HoloLens.</p>
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<div class="lx-single-post-thumbnail">
+						<img alt="Alternative Title" src="images/img-5-3.png" />
+					</div>
+					<div class="lx-single-post-content">
+						<p>We recruited thirty undergraduate engineering students from a mid-western university to participate in the study. These students were enrolled in the same engineering course where the lectures we re-designed would be given. We designed a comprehensive learning process and conducted a pilot study to test the robustness of the developed AR instructional system. First, only few participants had experience with AR devices, so, we provided a ten-minute training session. We explained in detail how to wear and calibrate HoloLens and real-time tracking sensors, the display of AR environments, ways to navigate through multiple AR scenes, and how to answer assessment questions after viewing each module. After making sure that the participants had no questions, we equipped the participants with the HoloLens and sensors. For the order of wearing, we first put HoloLens on the participants and had them perform eye calibration to ensure the accuracy of the collected eye-tracking data. Participants followed the audio instructions from the HoloLens and looked in each designated direction. We then attached Q-Track real-time positioning sensors on the participants’ waists to record their movements during the learning process. The data collected can be played back and exported using Q-Track real-time positioning software for analysis to discover the learning patterns of the participants. Finally, we attached Xsens motion capture sensors on the participants to accurately collect their body movement data as the basis for developing gesture recognition capabilities. Since we were only interested in upper body motion, we used sensors for eleven body parts, i.e., head, sternum, pelvis, right shoulder, left shoulder, right upper arm, left upper arm, right forearm, left forearm, right hand, and left hand. Participants were asked to stand and move around following the voice instructions of the Xsens MVN software to calibrate the sensors to ensure the accuracy of the data collected. Using the MVN software, these recorded motion data could be saved as a 3D avatar simulation video, or we could export each sensor's direction, position, velocity, acceleration, joint angle, and center of mass as an Excel file. With these details, we identified unique hand gestures that participants would not make during the learning process through JMP statistical software and use Xsens SDK to develop programs that recognize these gestures to trigger specific functions for integration into the AR system.</p>
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<div class="lx-single-post-thumbnail">
+						<img alt="Alternative Title" src="images/img-5-4.png" />
+					</div>
+					<div class="lx-single-post-content">
+						<p>After the participants put on the required equipment, they could start the AR lessons. We divided the experimental area into seven and eight areas based on the two sets of AR lectures containing seven and eight scenes respectively and marked an X at a specific point in each area. We prepared a table equipped with a Q-Track sensor for participants to fill in the quiz sheet. The table also served as a navigator for switching AR scenes. The client program we developed would immediately receive the position information through the locator receiver as soon as the participants moved the table to the X mark in a certain area illustrated in the below figure. After determining the area, it operated the Windows Device Portal to run the corresponding AR application and project the scene onto HoloLens. We did not use the movement of the Q-Track real-time positioning sensor attached to the participants for switching AR scenes because the areas we delineated were not as large as the developed AR scenes. As participants moved around to explore the AR environment, they might walk into other areas, causing the AR scene to be switched. Hence, we used the table with a Q-Track real-time positioning sensor as the basis for positioning, and the table must be placed on the X mark during the class until the participants wanted to switch scenes before being moved to the next X marker. Additionally, since the AR scene projection position of HoloLens depends on the initial gaze of the participants, if they randomly look at the ceiling or floor, the AR scene would be projected to a position that is difficult to view. Therefore, we marked each area with a number on the corresponding wall. Participants were asked to stare at the number marker until they saw the AR scene before looking away. At the end of each AR scene, the virtual instructor asked the participants to fill out the quiz sheet on the table, including a question to assess learning outcomes and a quiz for this lesson, before moving to the next area.</p>
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<div class="lx-single-post-thumbnail">
+						<img alt="Alternative Title" src="images/img-5-5.png" />
+					</div>
+				</div>
+			</div>
+			<!-- Footer -->
+			<div class="lx-footer">
+				<div class="lx-footer-content">
+					<div class="lx-footer-sn">
+						<ul>
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+							<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+						</ul>
+					</div>
+					<div class="lx-footer-links">
+						<ul>
+							<li><a href="about.html">About us</a></li>
+							<li>-</li>
+							<li><a href="privacy.html">Privacy Policy</a></li>
+						</ul>
+					</div>
+					<div class="lx-clear-fix"></div>
+				</div>
+			</div>
+		</div>
+
+		<!-- JQuery -->
+		<script src="js/jquery-3.5.0.min.js"></script>	
+		<!-- Main Script -->
+		<script src="js/script.js"></script>		
+	</body>
+</html>

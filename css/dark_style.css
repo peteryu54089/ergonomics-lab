@@ -1,0 +1,127 @@
+body{
+	background:#242424;
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-background-item{
+	border-right:1px solid #343434;
+	transition:all ease 0.3s;
+}
+.lx-background-item:nth-child(2n+1){
+	background:#252525;
+}
+.lx-theme-style a{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-header-logo a{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-header-search form input[type='text']{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-header-search form input[type='submit']{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-header-search form input[type='button']{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-menu-list ul li a{
+	color:#BEBEBE;
+	transition:all ease 0.3s;
+}
+.lx-menu-list ul li a:hover{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-menu-list ul li a.active{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-post-title h3 a{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-post-title span a{
+	color:#848484;
+	transition:all ease 0.3s;
+}
+.lx-navigation{
+	transition:all ease 0.3s;
+}
+.lx-navigation a{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-single-post-header span{
+	color:#848484;
+	transition:all ease 0.3s;
+}
+.lx-single-post-thumbnail p{
+	color:#848484;
+	transition:all ease 0.3s;
+}
+.lx-single-post-content p a{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-single-post-footer h3 span{
+	border-bottom:1px solid #FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-single-post-footer p{
+	color:#BEBEBE;
+	transition:all ease 0.3s;
+}
+.lx-single-post-share h3 span{
+	border-bottom:1px solid #FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-single-post-comment h3 span{
+	border-bottom:1px solid #FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-single-post-comment-item > ul li a{
+	color:#FFFFFF;
+}
+.lx-single-post-share ul li a{
+	color:#FFFFFF;
+}
+.lx-main-gallery{
+	background:rgba(0,0,0,0.9);
+	transition:all ease 0.3s;
+}
+.lx-main-gallery-header i{
+	color:#FFFFFF;
+}
+.lx-main-gallery-content h3 span{
+	background:rgba(0,0,0,0.5);
+	color:#FFFFFF;
+}
+.lx-gallery-layer{
+	background:rgba(255,255,255,0.5);
+	transition:all ease 0.3s;
+}
+.lx-main-gallery-content i{
+	color:#FFFFFF;
+}
+.lx-gallery-title{
+	background:linear-gradient(to top,rgba(0,0,0,0.3),rgba(0,0,0,0.0));
+	transition:all ease 0.3s;
+}
+.lx-gallery-title h3{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-footer-sn ul li a{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}
+.lx-footer-links ul li a{
+	color:#FFFFFF;
+	transition:all ease 0.3s;
+}

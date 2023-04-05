@@ -1,0 +1,32 @@
+/* Settings re-setters */
+.lx-pb-0{
+	padding-bottom:0px;
+}
+.lx-pr-10{
+	padding-right:10px;
+}
+.lx-pl-10{
+	padding-left:10px;
+}
+.lx-prl-10{
+	padding-right:10px;
+	padding-left:10px;
+}
+.lx-pb-20{
+	padding-bottom:20px;
+}
+@media(max-width:767px){
+	.lx-mb-0{
+		margin-bottom:0px;
+	}
+	.lx-pr-10{
+		padding-right:0px;
+	}
+	.lx-pl-10{
+		padding-left:0px;
+	}
+	.lx-prl-10{
+		padding-right:0px;
+		padding-left:0px;
+	}
+}
