@@ -61,11 +61,11 @@
 						<div class="lx-menu-list">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li><a href="research-1.html">Mar 2023</a></li>
-								<li><a href="research-2.html">Jan 2023</a></li>
-								<li><a href="research-3.html">Dec 2022</a></li>
-								<li><a href="research-4.html" class="active">Jul 2022</a></li>
-								<li><a href="research-5.html">Jan 2022</a></li>
+								<li><a href="research-1.html">Jan 2024</a></li>
+								<li><a href="research-2.html">Mar 2023</a></li>
+								<li><a href="research-3.html">Jan 2023</a></li>
+								<li><a href="research-4.html" class="active">Dec 2022</a></li>
+								<li><a href="research-5.html">Jul 2022</a></li>
 							</ul>
 						</div>
 					</div>
@@ -86,64 +86,44 @@
 			<div class="lx-main">
 				<div class="lx-single-post">
 					<div class="lx-single-post-header">
-						<h1>Augmented Reality into Undergraduate Engineering Laboratories</h1>
-						<span>July 2022</span>
-					</div>				
-					<div class="lx-single-post-content">
-						<p>We conducted a quasi-experimental intervention design to test the usability and learning performance within our interactive learning solution for engineering education. To begin, we designed two ergonomics lectures based on the instructional materials compiled by a professor who has been teaching in the field of engineering education for over ten years. We built fifteen 3D scenes using Unity to represent the two lectures. The first lecture contains seven scenes, and the second lecture contains eight scenes. To create an immersive learning experience, we placed a large semicircular blackboard in each scene, consisting of five smaller connected panels. This design provides the users with the ease and comfort to view and interact with the virtual space used for the lecture when they stand in the center of the scent and face forward. These five panels are used to display figures, human avatar, formula calculation, problem statements, and table of figures.</p>
+						<h1>Integrating Arm Gesture Recognition and Augmented Reality Modules</h1>
+						<span>December 2022</span>
 					</div>
-					<br />
-					<br />
-					<br />
-					<br />
 					<div class="lx-single-post-thumbnail">
 						<img alt="Alternative Title" src="images/img-4-1.png" />
-					</div>
+					</div>					
 					<div class="lx-single-post-content">
-						<p>For complex 3D models and animations, we used Autodesk 3ds Max to create and export them as Filmbox (FBX) files and then import them into Unity game engine. To guide the users’ gaze during the learning process, we created a 3D animated virtual instructor to simulate the real-world scenario of a professor in class. For the virtual instructor's voice, we used Murf AI, a high-quality speech generation software, to generate natural-sounding AI voices based on our input scripts. Xsens motion capture system was used to create the realistic character movement to simulate the professor's body movements in class. Finally, the virtual instructor animation, voice and the panel display of lecture contents are synchronized to provide a coherent and easy to follow virtual lecture.</p>
+						<p>In recent years, the use of augmented reality (AR) in education has become widespread and convincing. Among the many studies, the Microsoft HoloLens 2 headset is one of the most commonly used mixed reality devices. In addition to embedding complex computations through a custom holographic processing unit (HPU), it can also draw holograms in the user’s field of view, enabling interaction with the physical world. However, the interactive capabilities of HoloLens are limited. For example, voice interaction has detection issues, location tracking sensors are lacking, and it only provides a very small set of interactive gestures that cannot be customized with existing tools. In our previous research, we integrated Near Field Electromagnetic Ranging (NFER) technology and HoloLens to develop an AR-based instructional system that allows interaction through location tracking. Feedback collected from 30 participants indicated that gesture-based expressive interactions are urgently needed. To compensate for the lack of gesture interaction in HoloLens, we propose to combine motion capture sensors to provide customized gesture recognition capabilities.</p>
 					</div>
-					<br />
-					<br />
-					<br />
-					<br />
-					<div class="lx-single-post-thumbnail">
-						<img alt="Alternative Title" src="images/img-4-2.png" />
-					</div>
-					<div class="lx-single-post-content">
-						<p>We used Microsoft HoloLens 2 as the projection device for AR environments. Microsoft Mixed Reality Toolkit 3 (MRTK3), a mixed reality development framework was used for input system and building blocks for spatial interactions and UI. In addition, we used the eye gaze data provider of MRTK to collect eye-tracking data from the participants, including timestamps, the names and coordinates of the virtual objects touched by the participants’ gaze, and the linear distances between the coordinates of participants’ eyes and the coordinates of the virtual objects. If the participants’ gaze did not intersect with any virtual objects at a given time, no data was collected for that moment. It is worth noting that each AR scene generates an eye-tracking data file for each run. If the participants watched a scene several times, multiple data files for that scene were generated. In other words, even if the researchers were not present during the experiment, we could still clearly identify which participants watched which scenes repeatedly. To analyze the participants' learning behavior, we divided each data file into the data in class and the data when answering questions after class. By visualizing the data in class on a two-dimensional plane, we could easily determine whether the participants were distracted in the learning process. Besides, analyzing whether the participants’ gaze followed the instructions of the virtual instructor holds unique promise for discovering learning patterns and predicting learning behavior. To validate the eye-tracking data, we also used the video capture function of HoloLens to record the field of view of the participants during the experiment.</p>
-					</div>
-					<br />
 					<br />
 					<br />
 					<div class="lx-single-post-content">
-						<p>For each of the Unity scenes built, we exported them separately as a Visual Studio solution for the Universal Windows Platform. After pairing Visual Studio with HoloLens over Wi-Fi, we deployed these solutions to HoloLens, creating fifteen AR applications. To allow users to easily navigate through these AR applications through their positions, an accurate and fast indoor tracking technology that could be integrated with the AR systems was needed. The Q-Track NFER system met these needs. It consists of four components, the router, locator receiver, real-time positioning sensor, and real-time positioning software. Since the system uses a Transmission Control Protocol (TCP) socket-based protocol, after receiving the location signal sent by the real-time positioning sensor using NFER technology, the locator receiver transmits the information through the router using Wi-Fi to the real-time tracking software running on TCP port 15752 on a laptop. We developed a client program in C# based on the Application Programming Interface (API) of the Q-Track NFER system to determine which AR scene should be triggered by the received location coordinates. Since we divided the experiment site into seven areas for lecture one and eight areas for lecture two, the client program could easily determine which area the current location belongs to based on the pre-defined boundaries, and open Microsoft Windows Device Portal for HoloLens through the browser automation tool Selenium to run the corresponding AR application and project the scene onto HoloLens.</p>
+						<p>The Xsens MVN Awinda product includes 17 wireless motion capture sensors. They can be quickly worn over clothing with adjustable straps and feature reliable motion capture with a range of up to 50 meters. In the previous experiments, we had 30 participants wear 11 motion capture sensors for the upper body to collect all the gestures they performed while using the AR-based instructional system. According to these data, we defined the two gestures that were not performed by the participants during the learning process with the system as trigger gestures for developing gesture recognition. First, raise the right hand to the height of the sternum, straighten it forward, and then turn the entire upper body 90 degrees to the right. Second, raise the left hand to the height of the sternum, straighten it forward, and then turn the entire upper body 90 degrees to the left.</p>
 					</div>
 					<br />
 					<br />
-					<br />
-					<br />
-					<div class="lx-single-post-thumbnail">
-						<img alt="Alternative Title" src="images/img-4-3.png" />
-					</div>
 					<div class="lx-single-post-content">
-						<p>We recruited thirty undergraduate engineering students from a mid-western university to participate in the study. These students were enrolled in the same engineering course where the lectures we re-designed would be given. We designed a comprehensive learning process and conducted a pilot study to test the robustness of the developed AR instructional system. First, only few participants had experience with AR devices, so, we provided a ten-minute training session. We explained in detail how to wear and calibrate HoloLens and real-time tracking sensors, the display of AR environments, ways to navigate through multiple AR scenes, and how to answer assessment questions after viewing each module. After making sure that the participants had no questions, we equipped the participants with the HoloLens and sensors. For the order of wearing, we first put HoloLens on the participants and had them perform eye calibration to ensure the accuracy of the collected eye-tracking data. Participants followed the audio instructions from the HoloLens and looked in each designated direction. We then attached Q-Track real-time positioning sensors on the participants’ waists to record their movements during the learning process. The data collected can be played back and exported using Q-Track real-time positioning software for analysis to discover the learning patterns of the participants. Finally, we attached Xsens motion capture sensors on the participants to accurately collect their body movement data as the basis for developing gesture recognition capabilities. Since we were only interested in upper body motion, we used sensors for eleven body parts, i.e., head, sternum, pelvis, right shoulder, left shoulder, right upper arm, left upper arm, right forearm, left forearm, right hand, and left hand. Participants were asked to stand and move around following the voice instructions of the Xsens MVN software to calibrate the sensors to ensure the accuracy of the data collected. Using the MVN software, these recorded motion data could be saved as a 3D avatar simulation video, or we could export each sensor's direction, position, velocity, acceleration, joint angle, and center of mass as an Excel file. With these details, we identified unique hand gestures that participants would not make during the learning process through JMP statistical software and use Xsens SDK to develop programs that recognize these gestures to trigger specific functions for integration into the AR system.</p>
+						<p>We implemented gesture recognition based on Xsens MVN Engine Software Development Kit (XME SDK) using C++ programming language. To accurately capture motion data, participants need to perform a two-step calibration after putting on the sensors. First, stand still with both arms straight alongside the body vertically and thumbs forward for 3 seconds. Second, move around and swing the arms naturally for 13 seconds. Once the calibration is successfully completed, the participant can start performing gestures. To recognize gestures, we delineated 3 areas based on the x, y, and z coordinates and Euler angles defined by the Xsens base station for each sensor relative to the base station itself. When the participant’s arm is straightened, the horizontal ranges of these 3 areas cover the horizontal peripheral areas of the coordinate positions that the forearm at the front, right front 45 degrees, and right, respectively. The vertical ranges of these 3 areas cover the vertical peripheral area based on the coordinate position of the sternum. The participant's forearm must move sequentially from area 1, area 2, to area 3, and the participant's sternum must rotate with the movement of the forearm, then the performed gesture can be recognized as the correct trigger gesture.</p>
 					</div>
 					<br />
 					<br />
-					<br />
-					<br />
-					<div class="lx-single-post-thumbnail">
-						<img alt="Alternative Title" src="images/img-4-4.png" />
-					</div>
 					<div class="lx-single-post-content">
-						<p>After the participants put on the required equipment, they could start the AR lessons. We divided the experimental area into seven and eight areas based on the two sets of AR lectures containing seven and eight scenes respectively and marked an X at a specific point in each area. We prepared a table equipped with a Q-Track sensor for participants to fill in the quiz sheet. The table also served as a navigator for switching AR scenes. The client program we developed would immediately receive the position information through the locator receiver as soon as the participants moved the table to the X mark in a certain area illustrated in the below figure. After determining the area, it operated the Windows Device Portal to run the corresponding AR application and project the scene onto HoloLens. We did not use the movement of the Q-Track real-time positioning sensor attached to the participants for switching AR scenes because the areas we delineated were not as large as the developed AR scenes. As participants moved around to explore the AR environment, they might walk into other areas, causing the AR scene to be switched. Hence, we used the table with a Q-Track real-time positioning sensor as the basis for positioning, and the table must be placed on the X mark during the class until the participants wanted to switch scenes before being moved to the next X marker. Additionally, since the AR scene projection position of HoloLens depends on the initial gaze of the participants, if they randomly look at the ceiling or floor, the AR scene would be projected to a position that is difficult to view. Therefore, we marked each area with a number on the corresponding wall. Participants were asked to stare at the number marker until they saw the AR scene before looking away. At the end of each AR scene, the virtual instructor asked the participants to fill out the quiz sheet on the table, including a question to assess learning outcomes and a quiz for this lesson, before moving to the next area.</p>
+						<p>To evaluate the accuracy of the developed gesture recognition, we built an AR application in which a virtual instructor performed 300 gestures in 15 minutes for participants to follow. We did not design for a longer period of time because continuous execution of the gestures would fatigue the participants, making them unable to follow the gestures accurately and leading to a decrease in recognition accuracy. Among the 300 gestures, defined gesture 1 was performed 75 times, defined gesture 2 was performed 75 times, and 15 noisy gestures were performed 10 times each. These 15 noisy gestures were either arms raised 90 degrees or 180 degrees and then turned to the left or right. We designed it this way because the participants could easily follow without getting confused. Also, we will analyze the movement range of the gestures performed by the participants to find the ones with the least difference as the new trigger gestures that we will add afterward.</p>
 					</div>
 					<br />
 					<br />
+					<div class="lx-single-post-content">
+						<p>We propose to integrate gesture recognition into the previously developed AR-based instructional system. When participants answer questions after viewing the AR module, they can get different prompts to help answer by performing the 2 defined gestures if they are not clear about the course content. Also, participants can see the metacognitive scores and the results of their responses immediately after answering. If participants do not understand the results, they can perform the 2 defined gestures to see why they are over-confident or under-confident. In addition, if participants have over-confidence or under-confidence 3 times, they would be reminded when performing gestures. That is, performing the 2 defined gestures would trigger different prompts depending on whether participants are answering or have completed answering, or the outcome of their responses.</p>
+					</div>
 					<br />
 					<br />
-					<div class="lx-single-post-thumbnail">
-						<img alt="Alternative Title" src="images/img-4-5.png" />
+					<div class="lx-single-post-content">
+						<p>For this purpose, we used Unity software to create different animated 3D teaching assistant fairies that speak different prompts in each AR module. Subsequently, we created C# scripts to build a Transmission Control Protocol (TCP) server for each module. When it receives different messages, it will display different fairies. Furthermore, we developed a quiz website using HTML, CSS, and Javascript programming languages, which would be presented to participants through a touch screen that was wirelessly projected as a second monitor. Participants can simply tap the option buttons to answer and immediately see the results of their responses, the process of solving the questions, and whether they are over-confident or under-confident. To integrate the gesture recognition program, the AR instructional module, and the quiz website, we used the web automation tool Selenium.</p>
+					</div>
+					<br />
+					<br />
+					<div class="lx-single-post-content">
+						<p>For instance, when the participant performs the defined gesture 1, the gesture recognition program will first correctly identify the performed gesture. Then, it will determine which page of the quiz website the current page is on through the Selenium library. If it determines that the current page is the result page, the gesture recognition program will send a message to the TCP server on the AR module, indicating that the defined gesture 1 was performed on the result page. When the module receives this message, it will display the corresponding fairy to inform the particular prompt. If the Selenium library determines that the participant has been over-confident 3 times in the previous lectures, the gesture recognition program will send a message to the TCP server on the AR module, indicating that the participant has been over-confident 3 times. It will then display the corresponding fairy to remind the participant.</p>
 					</div>
 				</div>
 			</div>
