@@ -61,9 +61,9 @@
 						<div class="lx-menu-list">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li><a href="research-1.html" class="active">Jan 2024</a></li>
-								<li><a href="research-2.html">Mar 2023</a></li>
-								<li><a href="research-3.html">Jan 2023</a></li>
+								<li><a href="research-1.html" class="active">Mar 2024</a></li>
+								<li><a href="research-2.html">Jan 2024</a></li>
+								<li><a href="research-3.html">Mar 2023</a></li>
 								<li><a href="research-4.html">Dec 2022</a></li>
 								<li><a href="research-5.html">Jul 2022</a></li>
 							</ul>
@@ -86,14 +86,21 @@
 			<div class="lx-main">
 				<div class="lx-single-post">
 					<div class="lx-single-post-header">
-						<h1>Hands-on Exercise Based on Dynamic Posture Recognition</h1>
-						<span>Jan 2024</span>
+						<h1>Analyzing Attention Allocation During Learning with Eye-Tracking</h1>
+						<span>Mar 2024</span>
 					</div>
+					<div class="lx-single-post-content">
+						<p>We have developed a location-based AR learning system. We are interested in analyzing attention allocation during learning through eye-tracking technology. We ordered a customized eye-tracking device from Ergoneers and used a 3D printer to create eyeglass frames and plastic containers to mount the eye-tracking device to the HoloLens. This allowed us to collect eye-tracking data from participants as they used the HoloLens.</p>
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
 					<div class="lx-single-post-thumbnail">
 						<img alt="Alternative Title" src="images/img-1-1.png" />
-					</div>					
+					</div>
 					<div class="lx-single-post-content">
-						<p>One of the ergonomic principles describes the proper posture for lifting heavy objects. There have been many studies on airport baggage handlers suffering from low back pain due to prolonged use of incorrect lifting postures. In light of this, we propose a unique learning solution for engineering education. Using HoloLens to project a virtual worker lifting baggage, and students are guided by a virtual instructor to perform that movement.</p>
+						<p>In the previous experiments, we asked participants to answer a question on a test paper after watching each AR module. Instead of using a test paper, we have developed a quiz website allowing participants to answer questions through a touch screen.</p>
 					</div>
 					<br />
 					<br />
@@ -102,15 +109,12 @@
 					<div class="lx-single-post-thumbnail">
 						<img alt="Alternative Title" src="images/img-1-2.png" />
 					</div>
+					<br />
+					<br />
+					<br />
+					<br />
 					<div class="lx-single-post-content">
-						<p>Students wear full-body motion capture sensors to lift a suitcase and bring it to a table. The system recognizes whether their lifting postures are correct using data from the motion capture sensors. Based on the recognition results, the virtual instructor provides different instructions and feedback to the students.</p>
-					</div>
-					<br />
-					<br />
-					<br />
-					<br />
-					<div class="lx-single-post-thumbnail">
-						<img alt="Alternative Title" src="images/img-1-3.png" />
+						<p>We created a program to establish a connection between the quiz website, the application that controls the positioning sensor, and the application that controls the eye-tracking device. When the AR module is activated, the program collects five seconds of eye-tracking data from the participant as a baseline sequence. When the participant clicks the "Next" button on the quiz website to start answering the question, the program collects another five seconds of eye-tracking data from the participant as a comparison sequence. We input these two sequences into the Dynamic Time Warping (DTW) algorithm to obtain the difference between them. If this value is higher than the threshold we defined, it means that the two sequences are different. The program will play a sound to remind the participant to pay attention.</p>
 					</div>
 				</div>
 			</div>
