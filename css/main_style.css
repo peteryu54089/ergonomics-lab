@@ -426,7 +426,7 @@ div.lx-post:last-of-type{
 }
 .lx-single-post-content p{
 	margin-bottom:15px;
-	font-size:16px;
+	font-size:18px;
 	line-height:24px;
 }
 .lx-single-post-content p:last-of-type{
@@ -439,7 +439,7 @@ div.lx-post:last-of-type{
 .lx-single-post-content ul li{
 	margin-bottom:10px;
 	margin-left:30px;
-	font-size:16px;
+	font-size:18px;
 	list-style:disc;
 }
 .lx-single-post-content ul li:last-of-type{
@@ -506,7 +506,7 @@ div.lx-post:last-of-type{
 }
 .lx-submit input{
 	padding:10px 50px;
-	font-size:16px;
+	font-size:18px;
 	font-weight:700;
 	background:#f03434;
 	color:#FFFFFF;
@@ -690,7 +690,7 @@ div.lx-post:last-of-type{
 	margin-bottom:10px;
 }
 .lx-404 p{
-	font-size:16px;
+	font-size:18px;
 	line-height:24px;
 }
 @media(max-width:767px){
