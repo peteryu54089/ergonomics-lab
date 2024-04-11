@@ -61,11 +61,12 @@
 						<div class="lx-menu-list">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li><a href="research-1.html">Mar 2024</a></li>
-								<li><a href="research-2.html">Jan 2024</a></li>
+								<li><a href="research-6.html">Mar 2024</a></li>
+								<li><a href="research-5.html">Feb 2024</a></li>
+								<li><a href="research-4.html" class="active">Jan 2024</a></li>
 								<li><a href="research-3.html">Mar 2023</a></li>
-								<li><a href="research-4.html" class="active">Dec 2022</a></li>
-								<li><a href="research-5.html">Jul 2022</a></li>
+								<li><a href="research-2.html">Dec 2022</a></li>
+								<li><a href="research-1.html">Jul 2022</a></li>
 							</ul>
 						</div>
 					</div>
@@ -86,44 +87,31 @@
 			<div class="lx-main">
 				<div class="lx-single-post">
 					<div class="lx-single-post-header">
-						<h1>Integrating Arm Gesture Recognition and Augmented Reality Modules</h1>
-						<span>December 2022</span>
+						<h1>Hands-on Exercise Based on Dynamic Posture Recognition</h1>
+						<span>January 2024</span>
 					</div>
 					<div class="lx-single-post-thumbnail">
 						<img alt="Alternative Title" src="images/img-4-1.png" />
 					</div>					
 					<div class="lx-single-post-content">
-						<p>In recent years, the use of augmented reality (AR) in education has become widespread and convincing. Among the many studies, the Microsoft HoloLens 2 headset is one of the most commonly used mixed reality devices. In addition to embedding complex computations through a custom holographic processing unit (HPU), it can also draw holograms in the user’s field of view, enabling interaction with the physical world. However, the interactive capabilities of HoloLens are limited. For example, voice interaction has detection issues, location tracking sensors are lacking, and it only provides a very small set of interactive gestures that cannot be customized with existing tools. In our previous research, we integrated Near Field Electromagnetic Ranging (NFER) technology and HoloLens to develop an AR-based instructional system that allows interaction through location tracking. Feedback collected from 30 participants indicated that gesture-based expressive interactions are urgently needed. To compensate for the lack of gesture interaction in HoloLens, we propose to combine motion capture sensors to provide customized gesture recognition capabilities.</p>
+						<p>One of the ergonomic principles describes the proper posture for lifting heavy objects. There have been many studies on airport baggage handlers suffering from low back pain due to prolonged use of incorrect lifting postures. In light of this, we propose a unique learning solution for engineering education. Using HoloLens to project a virtual worker lifting baggage, and students are guided by a virtual instructor to perform that movement.</p>
 					</div>
 					<br />
 					<br />
+					<br />
+					<br />
+					<div class="lx-single-post-thumbnail">
+						<img alt="Alternative Title" src="images/img-4-2.png" />
+					</div>
 					<div class="lx-single-post-content">
-						<p>The Xsens MVN Awinda product includes 17 wireless motion capture sensors. They can be quickly worn over clothing with adjustable straps and feature reliable motion capture with a range of up to 50 meters. In the previous experiments, we had 30 participants wear 11 motion capture sensors for the upper body to collect all the gestures they performed while using the AR-based instructional system. According to these data, we defined the two gestures that were not performed by the participants during the learning process with the system as trigger gestures for developing gesture recognition. First, raise the right hand to the height of the sternum, straighten it forward, and then turn the entire upper body 90 degrees to the right. Second, raise the left hand to the height of the sternum, straighten it forward, and then turn the entire upper body 90 degrees to the left.</p>
+						<p>Students wear full-body motion capture sensors to lift a suitcase and bring it to a table. The system recognizes whether their lifting postures are correct using data from the motion capture sensors. Based on the recognition results, the virtual instructor provides different instructions and feedback to the students.</p>
 					</div>
 					<br />
 					<br />
-					<div class="lx-single-post-content">
-						<p>We implemented gesture recognition based on Xsens MVN Engine Software Development Kit (XME SDK) using C++ programming language. To accurately capture motion data, participants need to perform a two-step calibration after putting on the sensors. First, stand still with both arms straight alongside the body vertically and thumbs forward for 3 seconds. Second, move around and swing the arms naturally for 13 seconds. Once the calibration is successfully completed, the participant can start performing gestures. To recognize gestures, we delineated 3 areas based on the x, y, and z coordinates and Euler angles defined by the Xsens base station for each sensor relative to the base station itself. When the participant’s arm is straightened, the horizontal ranges of these 3 areas cover the horizontal peripheral areas of the coordinate positions that the forearm at the front, right front 45 degrees, and right, respectively. The vertical ranges of these 3 areas cover the vertical peripheral area based on the coordinate position of the sternum. The participant's forearm must move sequentially from area 1, area 2, to area 3, and the participant's sternum must rotate with the movement of the forearm, then the performed gesture can be recognized as the correct trigger gesture.</p>
-					</div>
 					<br />
 					<br />
-					<div class="lx-single-post-content">
-						<p>To evaluate the accuracy of the developed gesture recognition, we built an AR application in which a virtual instructor performed 300 gestures in 15 minutes for participants to follow. We did not design for a longer period of time because continuous execution of the gestures would fatigue the participants, making them unable to follow the gestures accurately and leading to a decrease in recognition accuracy. Among the 300 gestures, defined gesture 1 was performed 75 times, defined gesture 2 was performed 75 times, and 15 noisy gestures were performed 10 times each. These 15 noisy gestures were either arms raised 90 degrees or 180 degrees and then turned to the left or right. We designed it this way because the participants could easily follow without getting confused. Also, we will analyze the movement range of the gestures performed by the participants to find the ones with the least difference as the new trigger gestures that we will add afterward.</p>
-					</div>
-					<br />
-					<br />
-					<div class="lx-single-post-content">
-						<p>We propose to integrate gesture recognition into the previously developed AR-based instructional system. When participants answer questions after viewing the AR module, they can get different prompts to help answer by performing the 2 defined gestures if they are not clear about the course content. Also, participants can see the metacognitive scores and the results of their responses immediately after answering. If participants do not understand the results, they can perform the 2 defined gestures to see why they are over-confident or under-confident. In addition, if participants have over-confidence or under-confidence 3 times, they would be reminded when performing gestures. That is, performing the 2 defined gestures would trigger different prompts depending on whether participants are answering or have completed answering, or the outcome of their responses.</p>
-					</div>
-					<br />
-					<br />
-					<div class="lx-single-post-content">
-						<p>For this purpose, we used Unity software to create different animated 3D teaching assistant fairies that speak different prompts in each AR module. Subsequently, we created C# scripts to build a Transmission Control Protocol (TCP) server for each module. When it receives different messages, it will display different fairies. Furthermore, we developed a quiz website using HTML, CSS, and Javascript programming languages, which would be presented to participants through a touch screen that was wirelessly projected as a second monitor. Participants can simply tap the option buttons to answer and immediately see the results of their responses, the process of solving the questions, and whether they are over-confident or under-confident. To integrate the gesture recognition program, the AR instructional module, and the quiz website, we used the web automation tool Selenium.</p>
-					</div>
-					<br />
-					<br />
-					<div class="lx-single-post-content">
-						<p>For instance, when the participant performs the defined gesture 1, the gesture recognition program will first correctly identify the performed gesture. Then, it will determine which page of the quiz website the current page is on through the Selenium library. If it determines that the current page is the result page, the gesture recognition program will send a message to the TCP server on the AR module, indicating that the defined gesture 1 was performed on the result page. When the module receives this message, it will display the corresponding fairy to inform the particular prompt. If the Selenium library determines that the participant has been over-confident 3 times in the previous lectures, the gesture recognition program will send a message to the TCP server on the AR module, indicating that the participant has been over-confident 3 times. It will then display the corresponding fairy to remind the participant.</p>
+					<div class="lx-single-post-thumbnail">
+						<img alt="Alternative Title" src="images/img-4-3.png" />
 					</div>
 				</div>
 			</div>

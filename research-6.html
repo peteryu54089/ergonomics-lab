@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zxx">
+	<head>
+		<meta charset="utf-8">
+		<title>Ergonomics Lab</title>
+		<meta name="description" content="Ergonomics Lab">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- General CSS Settings -->
+		<link rel="stylesheet" href="css/general_style.css">
+		<!-- Main Style of the template -->
+		<link rel="stylesheet" href="css/main_style.css">
+		<!-- Theme Style of the template -->
+		<link rel="stylesheet" href="css/light_style.css" title="theme_style">
+		<!-- Landing Page Style -->
+		<link rel="stylesheet" href="css/reset_style.css">
+		<!-- Awesomefont -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<!-- Fav Icon -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<style>
+            img[src*="https://www.000webhost.com/static/default.000webhost.com/images/powered-by-000webhost.png"]{ display: none; }
+        </style>
+	</head>
+	<body>
+
+		<!-- Loader -->
+		<div class="lx-loader">
+			<div>
+				<h1>Ergonomics Lab</h1>
+				<img src="images/oval.svg" alt="Loading" />
+				<p>Powered By Mizzou</p>
+			</div>
+		</div>
+		<!-- Background -->
+		<div class="lx-background">
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+			<div class="lx-background-item"></div>
+		</div>
+		<!-- Wrapper -->
+		<div class="lx-wrapper">
+			<!-- Theme Style -->
+			<div class="lx-theme-style">
+				<a href="javascript:;">Dark Mode</a>
+			</div>
+			<!-- Header -->
+			<div class="lx-header">
+				<div class="lx-header-content">
+					<div class="lx-header-mobile">
+						<i class="material-icons">menu</i>
+					</div>					
+					<div class="lx-header-logo">
+						<a href="index.html">Ergonomics Lab</a>
+					</div>
+					<div class="lx-menu">
+						<div class="lx-menu-list">
+							<ul>
+								<li><a href="index.html">Home</a></li>
+								<li><a href="research-6.html" class="active">Mar 2024</a></li>
+								<li><a href="research-5.html">Feb 2024</a></li>
+								<li><a href="research-4.html">Jan 2024</a></li>
+								<li><a href="research-3.html">Mar 2023</a></li>
+								<li><a href="research-2.html">Dec 2022</a></li>
+								<li><a href="research-1.html">Jul 2022</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="lx-search-btn">
+						<i class="material-icons">search</i>
+					</div>
+					<div class="lx-header-search">
+						<form action="#" method="post" autocomplete="off">
+							<label><input type="text" name="keyword" placeholder="SEARCH" /></label>
+							<input type="submit" name="submit" value="search" class="material-icons" />
+							<input type="button" name="close" value="close" class="material-icons" />
+						</form>
+					</div>
+					<div class="lx-clear-fix"></div>
+				</div>
+			</div>
+			<!-- Main -->
+			<div class="lx-main">
+				<div class="lx-single-post">
+					<div class="lx-single-post-header">
+						<h1>Analyzing Attention Allocation During Learning with Eye-Tracking</h1>
+						<span>March 2024</span>
+					</div>
+					<div class="lx-single-post-content">
+						<p>To examine how attention is distributed during AR learning sessions via eye-tracking technology, we employed a tailored eye-tracking device provided by Ergoneers, which we attached to the HoloLens. This setup enabled us to gather eye-tracking data from participants while they were engaged with the HoloLens.</p>
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<div class="lx-single-post-thumbnail">
+						<img alt="Alternative Title" src="images/img-6-1.png" />
+					</div>
+					<div class="lx-single-post-content">
+						<p>In our Fall 2022 experiments, participants were required to respond to a question on a test paper following each AR module. Moving forward, for the Fall 2023 experiments, we have transitioned from using test papers to a quiz website with metacognitive monitoring feedback, enabling participants to submit their answers via a touchscreen.</p>
+					</div>
+					<br />
+					<br />
+					<br />
+					<br />
+					<div class="lx-single-post-thumbnail">
+						<img alt="Alternative Title" src="images/img-6-2.png" />
+					</div>
+					<div class="lx-single-post-content">
+						<p>We created a program to establish a connection between the quiz website, the application that controls the positioning sensor, and the application that controls the eye-tracking device. When the AR module is activated, the program collects five seconds of eye-tracking data from the participant as a baseline sequence. When the participant clicks the "Next" button on the quiz website to start answering the question, the program collects another five seconds of eye-tracking data from the participant as a comparison sequence. We input these two sequences into the Dynamic Time Warping (DTW) algorithm to obtain the difference between them. If this value is higher than the threshold we defined, it means that the two sequences are different. The program will play a sound to remind the participant to pay attention.</p>
+					</div>
+				</div>
+			</div>
+			<!-- Footer -->
+			<div class="lx-footer">
+				<div class="lx-footer-content">
+					<div style="display: grid;grid-template-columns: 10% 90%;">
+						<div style="display: flex;align-items: center;justify-content: center;">
+							<img style="max-height: 3em;max-width: 100%;" src="images/nsf-logo.png" alt="Alternative Title">
+						</div>
+						<div style="display: flex;align-items: center;justify-content: center;padding: 1em;">This material is based upon work supported by the National Science Foundation under Grant Number (NSF IIS-2202108). Any opinions, findings, and conclusions or recommendations expressed in this material are those of the author(s) and do not necessarily reflect the reviews of the National Science Foundation.</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- JQuery -->
+		<script src="js/jquery-3.5.0.min.js"></script>	
+		<!-- Main Script -->
+		<script src="js/script.js"></script>		
+	</body>
+</html>
